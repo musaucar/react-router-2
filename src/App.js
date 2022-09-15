@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
 
 //page
 import Home from './components/Home'
@@ -13,13 +13,13 @@ function App() {
           <nav>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink activeStyle={{backgroundColor:"yellow"}} exact to="/">Home</NavLink>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <NavLink activeStyle={{backgroundColor:"yellow"}} exact to="/about">About</NavLink>
               </li>
               <li>
-                <Link to="/users">Users</Link>
+                <NavLink activeStyle={{backgroundColor:"yellow"}} exact to="/users">Users</NavLink>
               </li>
             </ul>
           </nav>
