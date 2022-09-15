@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-rou
 import Home from './components/Home'
 import Users from './components/Users'
 import About from './components/About'
+import Error404 from './components/Error404.js'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/" exact component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/users" component={Users}/>
+            <Route path="*" component={Error404}/>
           </Switch>
         </div>
       </Router>
